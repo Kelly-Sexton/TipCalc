@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Tip Calculator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="bootstrap-theme.css">
+<link rel="stylesheet" href="tipcalc.css">
+</head>
+<body>
+<br>
+<br>
+<div class="container">
+<div class="row">
+<div class="col-sm-4"></div>
+<div class="col-sm-4">
+<h2>Tip Calculator</h2>
+<hr>
+<form>
+<div class="form-group">
+    <input type="number" class="form-control" id="bill" placeholder="How much was your bill?">
+</div>
+<h5>How was your service?</h5>
+<form>
+  <select id="service">
+    <option>30% Outstanding</option>
+    <option>20% Good</option>
+    <option>15% Ok</option>
+    <option>10% Bad</option>
+    <option>5% Terrible</option>
+  </select>
+</form>
+<br>
+<div class="form-group">
+    <input type="number" class="form-control" id="people" placeholder="How many people are sharing the bill?">
+</div><button type="submit" class="btn btn-default">Submit</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-4"></div>
+</div>
+<script src="jquery-2.2.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="bootstrap.js"></script>
+<script src="tipcalc.js"></script>
+</body>
+</html>
