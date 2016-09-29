@@ -1,6 +1,11 @@
 $(function () {
     $("#submit").click(function () {
         var prebill = $("#bill").val();
+        
+        if(prebill == ""){
+            alert("Please input bill amount.");
+        } else{
+        var prebill = $("#bill").val();
         var people = $("#people").val();
         var service = $("#service").val();
         // var service = "3";//prep it this way incase of selector value is a string
@@ -15,8 +20,8 @@ $(function () {
         $("#showTotal").html("<h2>" + total + splitTotal.toFixed(2) + "</h2>")
 
 
-    });
-
+    }});
+    
     $("#reset").click(function () {
         $("#showTip").html("<h2><h2>"
         )
