@@ -21,16 +21,23 @@
 <input type="number" min="1" max="999.99" maxlength=6 class="form-control" id="bill" placeholder="How much was your bill?">
 <h5>How was your service?</h5>
 <select id="service">
-<option>30% Outstanding</option>
-<option>20% Good</option>
-<option>15% Ok</option>
-<option>10% Bad</option>
-<option>5% Terrible</option>
+<option value=".3">30% Outstanding</option>
+<option value=".2">20% Good</option>
+<option value=".15">15% Ok</option>
+<option value=".1">10% Bad</option>
+<option value=".05">5% Terrible</option>
 </select>
 <h5>How many people are sharing the bill?</h5>
 <input type="number" min="1" max="9" value="1" maxlength=1 class="form-control" id="people">
-<button type="submit" class="btn btn-default">Submit</button>
-<button type="reset" class="btn btn-default">Reset</button>
+</div>
+<button type="button"  id="submit" >Submit</button>
+<button type="reset"  id="reset" >Reset</button>
+<h1 id="showTip"></h1>
+<br>
+<h1 id="showBill"></h1>
+<br>
+<h1 id="showTotal"></h1>
+
 </form>
 </div>
 </div>
